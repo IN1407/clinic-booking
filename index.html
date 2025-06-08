@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Book Appointment</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🩺 Book an Appointment</h1>
+    <form id="bookingForm">
+      <label for="name">Full Name</label>
+      <input type="text" id="name" required />
+
+      <label for="phone">Phone Number</label>
+      <input type="tel" id="phone" required />
+
+      <label for="date">Preferred Date</label>
+      <input type="date" id="date" required />
+      <p>After you fill all boxes click 'Book Now' ONCE then wait for the message 'Appointment Send'. If you encounter any error let us know by calling the number give in the website</p>
+      <button type="submit">Book Now</button>
+    </form>
+    <p id="statusMsg"></p>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

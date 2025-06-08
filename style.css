@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+* {
+  box-sizing: border-box;
+  font-family: 'Inter', 'Segoe UI', sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #e3f2fd, #f1f8ff);
+  background-attachment: fixed;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  font-family: 'Inter', sans-serif;
+}
+
+
+
+.container {
+  max-width: 500px;
+  width: 90%;
+  background: #ffffff;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.12);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.container:hover {
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.15);
+  transform: translateY(-4px);
+}
+
+h1 {
+  text-align: center;
+  color: #0069d9;
+  font-size: 30px;
+  margin-bottom: 30px;
+  font-weight: 600;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #444;
+  font-size: 15px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1.5px solid #d0d0d0;
+  border-radius: 10px;
+  font-size: 15px;
+  background-color: #fcfcfc;
+  margin-bottom: 20px;
+  transition: all 0.25s ease;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #3399ff;
+  box-shadow: 0 0 0 3px rgba(51, 153, 255, 0.25);
+  outline: none;
+  background-color: #fff;
+}
+
+button {
+  width: 100%;
+  padding: 14px;
+  background: linear-gradient(to right, #00c6ff, #0072ff);
+  color: white;
+  border: none;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background: linear-gradient(to right, #0072ff, #0056b3);
+  transform: scale(1.03);
+}
+
+#statusMsg {
+  margin-top: 20px;
+  text-align: center;
+  color: #28a745;
+  font-weight: 500;
+  font-size: 14px;
+  animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
